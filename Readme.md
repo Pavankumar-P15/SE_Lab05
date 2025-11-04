@@ -34,7 +34,7 @@
 
 ---
 
-**3. Did the static analysis tools report any false positives? If so, describe one example.**
+**2. Did the static analysis tools report any false positives? If so, describe one example.**
 
 - No clear false positives were detected in this case. The warnings and errors reported by Pylint, Flake8, and Bandit were all legitimate issues.
 - For example, Bandit flagged the use of `eval()` correctly (not a false positive).
@@ -43,7 +43,7 @@
 
 ---
 
-**4. How would you integrate static analysis tools into your actual software development workflow?**
+**3. How would you integrate static analysis tools into your actual software development workflow?**
 
 - **Local Development:**
   - Pre-commit hooks: Use tools like `pre-commit` to run Pylint, Flake8, and Bandit automatically before commits. This enforces code quality and security standards early.
@@ -60,7 +60,7 @@
 
 ---
 
-**5. What tangible improvements did you observe in the code quality, readability, or potential robustness after applying the fixes?**
+**4. What tangible improvements did you observe in the code quality, readability, or potential robustness after applying the fixes?**
 
 - **Improved Robustness & Security:**
   - Replacing bare except with specific exceptions removed silent failures.
