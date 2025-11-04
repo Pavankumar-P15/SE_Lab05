@@ -9,7 +9,6 @@
 
     Hardest to fix:
         ->Mutable default argument (logs=[]): Although the fix is simple (None default + initialization), this requires understanding the subtle shared state bug which beginners often miss.
-
         ->Bare except: Deciding which exception types to catch correctly (e.g., KeyError) and proper error handling requires more knowledge about failure modes and safer practices.
         
         ->Use of eval(): This involves removing or refactoring code, possibly rethinking functionality since eval is inherently unsafe. Replacing it with safer alternatives requires intent and caution.
